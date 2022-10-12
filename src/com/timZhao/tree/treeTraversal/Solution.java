@@ -20,7 +20,6 @@ public class Solution {
 
     public void preorder(BinaryTreeNode root, List<Integer> result) {
         if (root == null) return;
-
         preorder(root.left, result);
         preorder(root.right, result);
         result.add(root.val);

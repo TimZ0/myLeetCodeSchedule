@@ -19,10 +19,10 @@ public class Main {
         root.left.right = new com.timZhao.tree.buildATree.BinaryTreeNode(5, null, null);
         root.right.left = new BinaryTreeNode(6, null, null);
 
-        Solution5 p = new Solution5();
-        List<List<Integer>> result = p.levelOrder(root);
-        for (List<Integer> i:result) {
-            System.out.println(Arrays.toString(i.toArray()));
+        Solution4 p = new Solution4();
+        List<Integer> result = p.preorderTraversal(root);
+        for (int i:result) {
+            System.out.println(i);
         }
     }
 }

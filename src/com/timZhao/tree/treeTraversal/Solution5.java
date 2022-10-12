@@ -12,13 +12,10 @@ import java.util.*;
  */
 public class Solution5 {
     public List<List<Integer>> levelOrder(BinaryTreeNode root) {
-        if(root ==null)
-            return new ArrayList<>();
-
+        if(root ==null)  return new ArrayList<>();
         List<List<Integer>> result = new ArrayList<>();
         Queue<BinaryTreeNode> queue = new LinkedList<>();
         BinaryTreeNode cur = root;
-
         queue.add(cur);
         int size;
         List<Integer> temp;
@@ -30,11 +27,9 @@ public class Solution5 {
             cur = queue.poll();
             if (cur != null) {
                 temp.add(cur.val);
-
                 if (cur.left != null) queue.add(cur.left);
                 if (cur.right != null) queue.add(cur.right);
             }
-
         }
             result.add(temp);
         }
