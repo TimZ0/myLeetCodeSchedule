@@ -6,15 +6,15 @@ package com.timZhao.tree.buildATree;
  * @Description TODO
  * @time 2022/10/12 19:19
  */
-public class BinaryTreeNode {
+public class TreeNode {
     public int val;
-    public BinaryTreeNode left;
-    public BinaryTreeNode right;
+    public TreeNode left;
+    public TreeNode right;
 
-    public BinaryTreeNode(){
+    public TreeNode(){
     }
 
-    public BinaryTreeNode(int val, BinaryTreeNode left, BinaryTreeNode right){
+    public TreeNode(int val, TreeNode left, TreeNode right){
         this.val = val;
         this.left = left;
         this.right = right;

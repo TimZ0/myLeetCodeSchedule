@@ -1,7 +1,6 @@
 package com.timZhao.tree.treeTraversal;
-import com.timZhao.tree.buildATree.BinaryTreeNode;
+import com.timZhao.tree.buildATree.TreeNode;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -12,12 +11,12 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        BinaryTreeNode root = new BinaryTreeNode(1, null, null);
-        root.left = new com.timZhao.tree.buildATree.BinaryTreeNode(2, null, null);
-        root.right = new com.timZhao.tree.buildATree.BinaryTreeNode(3, null, null);
-        root.left.left = new com.timZhao.tree.buildATree.BinaryTreeNode(4, null, null);
-        root.left.right = new com.timZhao.tree.buildATree.BinaryTreeNode(5, null, null);
-        root.right.left = new BinaryTreeNode(6, null, null);
+        TreeNode root = new TreeNode(1, null, null);
+        root.left = new TreeNode(2, null, null);
+        root.right = new TreeNode(3, null, null);
+        root.left.left = new TreeNode(4, null, null);
+        root.left.right = new TreeNode(5, null, null);
+        root.right.left = new TreeNode(6, null, null);
 
         Solution4 p = new Solution4();
         List<Integer> result = p.preorderTraversal(root);

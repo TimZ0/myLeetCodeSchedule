@@ -1,6 +1,6 @@
 package com.timZhao.tree.treeTraversal;
 
-import com.timZhao.tree.buildATree.BinaryTreeNode;
+import com.timZhao.tree.buildATree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +13,11 @@ import java.util.Stack;
  * @time 2022/10/12 19:52
  */
 public class Solution3 {
-    public List<Integer> preorderTraversal(BinaryTreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         if (root == null) return null;
         List<Integer> result = new ArrayList<>();
-        Stack<BinaryTreeNode> stack = new Stack<>();
-        BinaryTreeNode cur;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur;
 
         stack.push(root);
         while (!stack.isEmpty()) {

@@ -1,6 +1,6 @@
 package com.timZhao.tree.treeTraversal;
 
-import com.timZhao.tree.buildATree.BinaryTreeNode;
+import com.timZhao.tree.buildATree.TreeNode;
 
 import java.util.*;
 
@@ -11,11 +11,11 @@ import java.util.*;
  * @time 2022/10/12 20:35
  */
 public class Solution5 {
-    public List<List<Integer>> levelOrder(BinaryTreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode root) {
         if(root ==null)  return new ArrayList<>();
         List<List<Integer>> result = new ArrayList<>();
-        Queue<BinaryTreeNode> queue = new LinkedList<>();
-        BinaryTreeNode cur = root;
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode cur = root;
         queue.add(cur);
         int size;
         List<Integer> temp;
